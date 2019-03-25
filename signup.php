@@ -10,8 +10,13 @@
     </head>
     <body>
         <div class="ContenedorLogin">
-            <h1 style="text-align: center">Bienvenido</h1>
+            <h1 style="text-align: center">Registro</h1>
             <form>
+                <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                    <input id="CampoNombreUsuario" type="email" class="validate" required>
+                    <label for="CampoNombreUsuario">Correo Electrónico</label>
+                </div>
                 <div class="input-field">
                     <i class="material-icons prefix">account_circle</i>
                     <input id="CampoNombreUsuario" type="text" class="validate" required>
@@ -22,13 +27,18 @@
                     <input id="CampoContrasena" type="password" class="validate" required>
                     <label for="CampoContrasena">Contraseña</label>
                 </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="CampoConfirmContrasena" type="password" class="validate" required>
+                    <label for="CampoConfirmContrasena">Confirmar Contraseña</label>
+                </div>
                 <button type="submit" class="waves-effect waves-ligh btn-large">
-                    Iniciar Sesión
+                    Registrarse
                 </button>
                 <br>
                 <br>
-                <a href="signup.php" >
-                    Registrarse
+                <a href="login.php" >
+                    ¿Ya tienes cuenta de usuario?
                 </a>
                 <br>
                 <a href="signup.php" >
