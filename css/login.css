@@ -13,3 +13,6 @@
 body{
     background: #000000;
 }
+.MensajeError{
+    color: red;
+}

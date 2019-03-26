@@ -1,6 +1,7 @@
 <?php
 
 //archivo para conectar con la base de datos
+$conexion="";
 try{
     // en la conexión se especifica la ruta del servidor de base de datos
     //se especifica el nombre de la base de datos que vamos a acceder
