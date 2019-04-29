@@ -47,7 +47,16 @@ function IniciarSesion($CampoNombreUsuario,$CampoContrasena){
     $sql="SELECT * FROM usuario WHERE NombreUsuario='$CampoNombreUsuario' && Contrasena='$CampoContrasena'";
     $resultado=mysqli_query($Conexion,$sql);
     $Registro=mysqli_fetch_array($resultado,MYSQLI_ASSOC);
-    printf($Registro['NombreUsuario']);
+    // printf($Registro['NombreUsuario']);
+    session_start();
+    $_SESSION['IdUser']=$Registro['Id'];
+    header('location: index.php');
+}
+
+function ConsultarListaUsuarios(){
+    include('modelo/conexionDb.php');
+    $sql="SELECT * FROM usuario";
+    $resultado=mysqli_query($Conexion,$sql);
     return $resultado;
 }
 

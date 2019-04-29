@@ -32,7 +32,7 @@
                     <input type="submit" name="Accion" value="Registro" class="btn btn-success">
                     <p id="MensajeError"></p>
                     <br>
-                    <a href="login.html" >
+                    <a href="login.php" >
                         ¿Ya tienes cuenta de usuario?
                     </a>
                     <br>

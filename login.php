@@ -1,3 +1,11 @@
+<?php
+//esta comprobación verifica si a iniciado sesión para llevarlo a la pagina principal
+//o lo lleva al login
+session_start();
+if(isset($_SESSION['IdUser'])){
+    header('location: index.php');
+}
+?>
 <html lang="es">
     <head>
         <link rel="stylesheet" href="css/login.css">
@@ -8,7 +16,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+        <title>Inicio Sesión</title>
     </head>
     <body>
         <div class="ContenedorLogin">
@@ -26,7 +34,7 @@
                     <button type="submit" name="Accion" value="Login"  class="btn btn-success">Iniciar Sesión</button>
                     <br>
                     <br>
-                    <a href="signup.html" >
+                    <a href="signup.php" >
                         Registrarse
                     </a>
                     <br>
